@@ -42,3 +42,6 @@ jobs:
 
       - name: Run Tests
         run: php artisan test
+
+      - name: Storage Link
+        run: php artisan storage:link
