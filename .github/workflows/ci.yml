@@ -2,7 +2,7 @@ name: Laravel CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ tugas_ci/cd_yuni ]
 
 jobs:
   laravel-tests:
