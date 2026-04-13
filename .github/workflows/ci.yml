@@ -34,5 +34,11 @@ jobs:
       - name: Generate Key
         run: php artisan key:generate
 
+      - name: Clear & Cache Config
+        run: |
+          php artisan config:clear
+          php artisan cache:clear
+          php artisan view:clear
+
       - name: Run Tests
         run: php artisan test
