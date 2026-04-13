@@ -17,18 +17,9 @@ jobs:
         with:
           php-version: 8.2
 
-      - name: Copy .env
-        run: cp .env.example .env
-
       - name: Setup environment
         run: |
           cp .env.example .env
-          echo "APP_ENV=testing" >> .env
-          echo "DB_CONNECTION=sqlite" >> .env
-          echo "DB_DATABASE=database/database.sqlite" >> .env
-
-      - name: Set testing environment & DB
-        run: |
           echo "APP_ENV=testing" >> .env
           echo "DB_CONNECTION=sqlite" >> .env
           echo "DB_DATABASE=database/database.sqlite" >> .env
@@ -41,12 +32,12 @@ jobs:
           mkdir -p storage/framework/cache
           mkdir -p storage/framework/sessions
           mkdir -p storage/framework/views
-          mkdir -p storage/framework/testing
           mkdir -p bootstrap/cache
           chmod -R 777 storage bootstrap/cache
 
       - name: Create SQLite database
         run: |
+          mkdir -p database
           touch database/database.sqlite
 
       - name: Generate Key
@@ -56,8 +47,4 @@ jobs:
         run: php artisan config:clear
 
       - name: Run Tests
-        run: php artisan test
-
-      - name: Create SQLite database
-        run: mkdir -p database
-          touch database/database.sqlite
+        run: php artisan test 
