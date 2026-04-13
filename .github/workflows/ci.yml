@@ -20,6 +20,9 @@ jobs:
       - name: Copy .env
         run: cp .env.example .env
 
+      - name: Set testing environment
+        run: echo "APP_ENV=testing" >> .env
+
       - name: Install Dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
@@ -28,20 +31,18 @@ jobs:
           mkdir -p storage/framework/cache
           mkdir -p storage/framework/sessions
           mkdir -p storage/framework/views
+          mkdir -p storage/framework/testing
           mkdir -p bootstrap/cache
           chmod -R 777 storage bootstrap/cache
 
       - name: Generate Key
         run: php artisan key:generate
 
-      - name: Clear & Cache Config
-        run: |
-          php artisan config:clear
-          php artisan cache:clear
-          php artisan view:clear
+      - name: Clear Config
+        run: php artisan config:clear
+
+      - name: Cache Config
+        run: php artisan config:cache
 
       - name: Run Tests
         run: php artisan test
-
-      - name: Storage Link
-        run: php artisan storage:link
