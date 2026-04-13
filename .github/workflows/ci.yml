@@ -2,7 +2,7 @@ name: Laravel CI
 
 on:
   push:
-    branches: [ "*" ]
+    branches: [ main ]
 
 jobs:
   laravel-tests:
