@@ -48,8 +48,9 @@ jobs:
       - name: Clear Config
         run: php artisan config:clear
 
-      - name: Cache Config
-        run: php artisan config:cache
-
       - name: Run Tests
         run: php artisan test
+
+      - name: Create SQLite database
+        run: mkdir -p database
+          touch database/database.sqlite
