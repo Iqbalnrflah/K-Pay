@@ -1,0 +1,3944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP KosPay</title>
+<link
+	href="2026-06-10-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2026-06-10-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2026-06-10-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP KosPay</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2026-06-10-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Rab 10 Jun 2026, at 14:47:37</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Sedang</span>, <span>Confidence</span>=<span
+									class="confidence-level">Tinggi</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Sedang</span>, <span>Confidence</span>=<span
+									class="confidence-level">Sedang</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Lemah</span>, <span>Confidence</span>=<span
+									class="confidence-level">Tinggi</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Lemah</span>, <span>Confidence</span>=<span
+									class="confidence-level">Sedang</span> <span>(3)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informasi</span>, <span>Confidence</span>=<span
+									class="confidence-level">Sedang</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informasi</span>, <span>Confidence</span>=<span
+									class="confidence-level">Lemah</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://kospay.web.id</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Tinggi</span>, <span class="risk-level">Sedang</span>, <span class="risk-level">Lemah</span>, <span class="risk-level">Informasi</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Tinggi</span>, <span class="confidence-level">Sedang</span>, <span class="confidence-level">Lemah</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">Tinggi</span>, <span class="confidence-level">Sedang</span>, <span class="confidence-level">Lemah</span>, <span class="confidence-level">Salah Positif</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">Tinggi</th>
+							<th scope="col">Sedang</th>
+							<th scope="col">Lemah</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Tinggi</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Sedang</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Lemah</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(20,0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informasi</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(20,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(10,0%)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Tinggi</span><br>  <span
+									class="additional-info-percentages">(= Tinggi)</span>  
+							</th>
+							<th scope="col">
+								<span>Sedang</span><br>   <span
+									class="additional-info-percentages">(&gt;= Sedang)</span> 
+							</th>
+							<th scope="col">
+								<span>Lemah</span><br>   <span
+									class="additional-info-percentages">(&gt;= Lemah)</span> 
+							</th>
+							<th scope="col">
+								<span>Informasi</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informasi)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://kospay.web.id</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(10)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Sedang</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Sedang</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Sub Resource Integrity Attribute Missing</a></th>
+							<td class="risk-level">Sedang</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Lemah</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Lemah</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(30,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Lemah</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Lemah</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Lemah</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(50,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informasi</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Session Management Response Identified</a></th>
+							<td class="risk-level">Informasi</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(40,0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>10</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Alasan</th>
+						<th scope="col">Site</th>
+						<th scope="col">Deskripsi</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-2">
+							<div>Sedang</div>
+						</td>
+						<td>
+							<div>Exceeded Low</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>Percentage of memory used</div>
+						</td>
+						<td align="center">
+							<div>91   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Lemah</div>
+						</td>
+						<td>
+							<div>Peringatan</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP errors logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>6   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Lemah</div>
+						</td>
+						<td>
+							<div>Peringatan</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP warnings logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>9   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>52 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>36 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>10 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/jpeg</div>
+						</td>
+						<td align="center">
+							<div>50 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/png</div>
+						</td>
+						<td align="center">
+							<div>30 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>15 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/plain</div>
+						</td>
+						<td align="center">
+							<div>3 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>26   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informasi</div>
+						</td>
+						<td>
+							<div>https://kospay.web.id</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>77 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Sedang</span>, <span>Confidence</span>=<span
+							class="confidence-level">Tinggi</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/sitemap.xml HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (191 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Wed, 10 Jun 2026 06:24:33 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Content-Type: text/html; charset=utf-8
+content-length: 6659
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6659 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+
+        &lt;title&gt;Not Found&lt;/title&gt;
+
+        &lt;style&gt;
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-300 { --text-opacity: 1; color: #e2e8f0; color: rgba(226,232,240,var(--text-opacity)) }}
+        &lt;/style&gt;
+
+        &lt;style&gt;
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body class=&quot;antialiased&quot;&gt;
+        &lt;div class=&quot;relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0&quot; role=&quot;main&quot;&gt;
+            &lt;div class=&quot;max-w-xl mx-auto sm:px-6 lg:px-8&quot;&gt;
+                &lt;div class=&quot;flex items-center pt-8 sm:justify-start sm:pt-0&quot;&gt;
+                    &lt;h1 class=&quot;px-4 text-lg dark:text-gray-300 text-gray-700 border-r border-gray-400 tracking-wider&quot;&gt;
+                        404                    &lt;/h1&gt;
+
+                    &lt;div class=&quot;ml-4 text-lg dark:text-gray-300 text-gray-700 uppercase tracking-wider&quot;&gt;
+                        Not Found                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Sub Resource Integrity Attribute Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Provide a valid integrity attribute to the tag.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Sedang</span>, <span>Confidence</span>=<span
+							class="confidence-level">Sedang</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Lemah</span>, <span>Confidence</span>=<span
+							class="confidence-level">Tinggi</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/storage/kpay.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1000 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/storage/kpay.png HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (231 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Last-Modified: Mon, 08 Jun 2026 07:12:21 GMT
+ETag: &quot;1280-653b8bb45b1ed&quot;
+Accept-Ranges: bytes
+Content-Length: 4736
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4736 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ^   W   Ýò¦   	pHYs        sRGB ®Îé   gAMA  ±üa   tEXtSoftware Figma±c  ûIDATxí\	tE®9	B rÂ%°&quot;OnAYÎEWÐAYÈãÁÃ\TdeÅ&#39;ÇD@}(7r#°3²r$rá@2Ýû}îI§tvúãÝÓ]]]õÕÕ_5Â8pàÀ8pàÀÁÃ wk.÷u{?$1ýû÷/uðàÁ^çÎë·råÊ*{¹ IôàÁK6¬ñÚ£Iú:¨ªz&#39;==]½sçNUåÔ©SC´2v/Y²¤8ê»ÏÑ(íW&lt;êHJJªD¢/]º¤^¾|YIMMõAêI¾ØFØPTáÂ&#39;u_¼xUÜºukVæÑü3gÎ¼ûömã£jåÊ+*4`µÈ9ü6ýêÕ«îÞ½ËúÒùá  ©7o3ý­NX¯Wj¾Ñ¤¸Eá±Ì¨Q£rR/ËÊoÜ¸±¤H&quot;-@&gt;¿Sº½.ËzùrÌsÏ=²aÃZÙpüHn(ß5ËÝéz§²uÞíÎ¼|àÀpm&lt;Ë©&lt;¹uëÖç]1¨J\&quot;«n ùÐ¦V­ZýxâÄ+V¬¸Rd«ZÔ­¼õÖ[&#39;M4ZCÄöáX R@{^5|2¢¢¢îL6mè.|-â}Õ½ë×¯+µk×V.\(B@&#39;ÎylDDD_ÚtEFF/&amp;&amp;ÆhzTM»|O
+V¤¥¥õÇ M×êðmÛ¶-²_Gý~¡/D½.ü7OB«ä5Ô)ªU«¶Eæ|]u´hØ~Q«V­Pï&#39;Òø6Èþ4IÒsã=räÈ×¨ëÕ%KÒQõUÇã;þ¼FLï,iØøÒI*eEÿÐ$ú}Jæ¹vÁ¶V÷(aJ»zïÞ½7ÑÙ	$ÏÉ¨ß=¼C5kÖìU¬X±ù«V­z¡xñâ$bÏÁÑTÁGÃ&#39;LÖêÓí~ µÁÇ7³üh®úvG&lt; Ø&quot;ªä¶JS#¿SAHÚ;¤#é ûÄºuëêie½;v_¶lYCJ/É§P1P{ì± _åûÈF_AÝ&quot;nã=Ûqï¼7×Lí»&#39; lÿë¯¿Z&gt;Gµñ&gt;eË-ÏÖ­[÷;G³á#é°Á{fÍ5u`oÌÈd»»té¸~ýúZ¸ßå(ÑÀ,( ÿe8Þí7I¾?&quot;ùÈý&lt;þøã.ê8²fx®ÉâÅ_6Ûø@æ
+¶ÙyRvïÞ]§yóæÛ(é$×$éô ·A®keu.%¹M67mÚTäç}F?&lt;¥P¡BMqí`|||¤ö$dnüÆý÷ÿ­Õ/×ò*ßvm¼å=vK&quot;k&lt;óÌ3»H:Èöiå½ ýly]{Fd&#39;]äçþÒÎ;«CrOÂxàH¾ëæÍ7k¶lÙ2eíÚµëÏÃ¤÷FÚ-L&quot;ªTñ ³@)DþôÓOåkÔ¨Ò#ÐyFt¤7-?ªµÇ*TÜ¸qãë0GÕAü&gt;H¿¹&quot;Èç2zÆÂLZ°`AU&gt;ÐS@plüN3§¼×öM+ £7ÄñtE«T©h¤0´¤»ÐiO2eÄ;ôa|£»8&gt;I__¢DVÚ¤Ëwg ,Ñ­[·}°ñOÂ¸´y®ù¿DÐQ$õhä&quot;Ä&amp;|åD«LÒ¹ÙgÍÈnjßýè¼+é!Ð¾­Á:?6ÄôA$HßNÖÌ¤¸J.Mµnß´iÓØ¼XA·á¾Âÿ3ÞYp}|Wæ,7ÇIðÛ|~-/[¶l6GÙDl±øô,æÞåv&amp;MtÀiPâó%á¤M TælSßT ét\$&quot;ÖD­ÁÍä òÑÉÐA¾éïA³Í,I={ÖÌ¬×PNØ×ã4!Ë&lt;LÒ½{wIä!Cv@«1	iòÈâtúß®MU´ç&amp;S#ª8º§#âòÓÚWÄ|¦¦O!&quot;·@{
+*cx«X×hºÌs±a^C¨½$«T©R®k×®}§8AäÍ2¡ªÕãø ¿ $6×ïf6K¥	Ê`ÏrýaÂ·ã4¾B/¬+Üã¾Á¤ÈÔ¬,CéÛ²u~L?PÏD£°*·IäæÍ·Dª\¼üÐÎâs½óõÌ¯øÐ@Þ¡÷A&#39;Þä8û¯Ã±yEVêØê]^cùýû÷GL&gt;½v=ÇB¡¥ÂÃ^+¶%u ~ÁK/½ÔQùtdóao)
+2ûëéa
+ºkåBF03gÎ¬
+é|ÒwQÑ¾áÃïÖïÁgTt¿
+uè&#39;8(âtü¶¡O÷©ä#Ê&quot;bi3²hÑ¢§ù¬yùÎ?þ¸4ÂÙúõë&#39;ü $ñfégvNÈÇÃrè¸?©àï4}¸\è&amp;ç;6ÒPä&gt;iCãjn!Ö²xµÛâ&lt;¤ £-«aZßç[Q!E6/yéÒ¥­ïËÂN_d&amp;`ª²­ta  ü;õ^8}útéJ*yKêÝ»·6ÈÖÆòåË7çËømªmñjeÖ¬YqÐ a¶U.¨ /BÃÀ}!òV6Þ íp¢¬c«W¯Ö=|O¨£×uù={ö,PDû}aÎT¯0S_e.é.¶æ}äv|l4f±#°¦&lt;ï_ª})ÐÀÔÿ&gt;µÃ}&amp;ÏãxÎ-xe\;wîÓÚ,3&#39;$Uü~`õ,£0K£yäjÂÔöS¦LyR¿Ïÿ0¡y¤Ù£á3Üô;Ìj4¨ ¸ß¸Ê+G³u}yCÂÖ@ïç&#39;Om;¶Ð®Ô&lt;&#39;DxÑ¹¯¾úªæk¯½fÎ4æ²S U ÇH[ü¡ÝüùóÇâ×¿sïÂl¸«^ÑÌLã&gt;øà;D-c`ôË:uj`Q¯u}ãÐª&quot;ð*t¨ ½&quot;ÂäXß&quot;òß~û­¥©QêÑ£G§gkpuS£í×	 =[ø~®NÁÉ}§_ÿæojâù :ed$Oí4B~çVnª²ðiòîÍ@ØÜI»v_ml:ÍNU®\¹lîl))Áå,¡­³
+-ÁÚfºÝ!jMSY¡Ó¢EÎhK
+Wà¹`&gt;fEsÓ×å¢©:f2ag#RåCýU»nì¸ºqãÆV8ÞA¼\äpnx¨Û|vRÌco¤f[
+Ù:ª0¨ÛþÂªú&amp;Eò}°×]a.~Ðï!½fIÕÚ_ç£={^ÁàÏ¢Y©±mÛ¶rÂ0S¦ö`}àæ§á¶Ñ»!¾ K|.¦*¶)¼v( ©ª9K
+.ó@¤­OØðþX­Ê©[Å/_ KHH`
+ú4Û©w¿òÊ+-ÞíB?bò69z´á:pàÀN0mË:&amp;lðh×þ*â¢£CNòàûÞ~ýú1·6ù¦U.«F&#39;È5Ô÷ÆÀv3ÿÂ¼Q7n~9¹¤?0cÆjF·s`,bcc»°á~©¹ã¹ó åû` záR¯^½B0a^DRÍD-â9±	:ù&gt;|~âà&#39;|¢/ËC¾yËò&gt;_ËxfØrÓ®]»fÐÓæAâ/ÌBÒÎãXsÎ9Ô/Éß°a#»\$á®ª-R°
+ö}°¡|¢ù¡R¦	U:#tøâ+bµjÔÏh;ÿeºí,)`8P&gt;Éy×7ÁågÏ]Ì\7&amp;T±Ì&gt;²n&amp;óà&lt;_ÖÌ¿vèÖU¤0Zj·lgXÈÎ[.hDÎfK m{¨!þ,ÅLa¤:Áö^®S§ÎT8QÂ¿1D&gt;bÐ}úô¹*Lþv³ØåzLóÛë÷ÌMçHóþ©¸_Â\éb[âóxétÙ!ó-¨+÷Ã0ßçwSWÙùÈÉø|ÚÈ#³uædßáÃÿpotòÄ¹ûà=ý~£Fº!Ù¬}5&gt;+Ï4Ù5²@8ØõG a%ÿÿÃy}ëy¿È%òxKóq
+d¤@B-éy@:óónNT½¥Èg#¦G­¯©&amp;{êîÕ«×1,1NA=º:tèQ½wß}76ÿIäx6[4Õ5nÜ¸¨ó8Ã_H}t³fÍÚ	kpÿåUÉ¥B«RD.ax®(ºN Â»¡ºÕ`*öjqùè¬»È°êAø½L¾&lt;Ç_@sâß*Ì`!öj°ÌEú&#39;V!òË~Ðeeh¾ÝB-r	[ÄsÝ4Ðuu/ÃóÝ»w×Çy27qÛµ©¨»ÈH&gt;LÊ¢&#39;OYdÊºÂ¹õ:q.r=ztØµk×òPåvìØ±á&#39;RÐô)ÍÛ·oo¹Vj0WcE.ax&amp;®AßAGUtLbv$a ¸ñH1MºH¾Âm×qqqSRR8-÷&#39;¾´}ò²Nú&amp;0£Â`Æ ½,DQ¢ÎhOqÎvÇáÙ³Xî&quot;ñzûµ-#¹-â©V`ã4GèÂ:cÌ1õ¡Ê	0+n.Èw3ZàÎ_,á}&lt;N¿äÖm¤½·sçÎÌ8^ÅàúU3i07ËøH±òGí^ ÖÉfr¤`x8×5GèßmÉ)$£ùËtòEöèVä«Õ«WarMÄÇÇ1	{f5ÏFH^í
+·üÞ½{çQ»ÂñwAÜij5X5náÄPä¶¶w ¥jy;tûÖõX;z»ü¹XøîAgÅvæRòå:-lmo¥kÐ³(&#39;ðË«0Á-ò¡pËì$nãÈF¥¶ÅÑl¦TÐÒnø¸&quot;°%ñ!FÜ¼iÕFçz&quot;&quot;¨G®©ÙíRüâ#ÆK[kK¶oßþ¶È¾÷å_®·&lt;÷â?~üe¼g=´qfµñÊaö0IsP¶ÿøñã7ÿvîÜp!Dûë¦L&lt;æ(A­ÿÌé=s÷Ü`ª?X¦Hûì³ÏôH#äî,Ã¦O×¼Þ«9­AºäåÏµ£!ÜÌûò×Ú1JÑôÀ¤ìÛ·¯.½wEh¨çÁàãZF÷äj;·]çj7ÒÉpq2ítò¹Å.[A¤j9À¤æÉ;vm¼exÇ ìd0iðÿD²uëÖß&#39;&amp;&amp;6ù\öÉçÇ8«DÎ¼¾xÈ`wCSÅu9Ãs³tº4ØÀS ÿÉZk¿M?.Æ`^ìS&lt;2
+S¬R.&lt;k_%ùXÑù) ?3¯þ_DntøðáBL2¥8ãäMáGû+ÜçØÀF2:ujê\j¸Mú&amp;ÌÌçeA°uëÖfüs&amp; 7.¦^üVÆîÏ1%¸µÂ´rôÐý Üü%%$¿0âíga^¸È±Sk®öÿ*ö¨a\{¤Î8pàÀ8pàÀ8pàÀ8pð¿ÿ |kz3¶D    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.67 (Debian)</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/storage/kpay.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/319.html">CWE-319</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1000 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/storage/kpay.png HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (231 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Last-Modified: Mon, 08 Jun 2026 07:12:21 GMT
+ETag: &quot;1280-653b8bb45b1ed&quot;
+Accept-Ranges: bytes
+Content-Length: 4736
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4736 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ^   W   Ýò¦   	pHYs        sRGB ®Îé   gAMA  ±üa   tEXtSoftware Figma±c  ûIDATxí\	tE®9	B rÂ%°&quot;OnAYÎEWÐAYÈãÁÃ\TdeÅ&#39;ÇD@}(7r#°3²r$rá@2Ýû}îI§tvúãÝÓ]]]õÕÕ_5Â8pàÀ8pàÀÁÃ wk.÷u{?$1ýû÷/uðàÁ^çÎë·råÊ*{¹ IôàÁK6¬ñÚ£Iú:¨ªz&#39;==]½sçNUåÔ©SC´2v/Y²¤8ê»ÏÑ(íW&lt;êHJJªD¢/]º¤^¾|YIMMõAêI¾ØFØPTáÂ&#39;u_¼xUÜºukVæÑü3gÎ¼ûömã£jåÊ+*4`µÈ9ü6ýêÕ«îÞ½ËúÒùá  ©7o3ý­NX¯Wj¾Ñ¤¸Eá±Ì¨Q£rR/ËÊoÜ¸±¤H&quot;-@&gt;¿Sº½.ËzùrÌsÏ=²aÃZÙpüHn(ß5ËÝéz§²uÞíÎ¼|àÀpm&lt;Ë©&lt;¹uëÖç]1¨J\&quot;«n ùÐ¦V­ZýxâÄ+V¬¸Rd«ZÔ­¼õÖ[&#39;M4ZCÄöáX R@{^5|2¢¢¢îL6mè.|-â}Õ½ë×¯+µk×V.\(B@&#39;ÎylDDD_ÚtEFF/&amp;&amp;ÆhzTM»|O
+V¤¥¥õÇ M×êðmÛ¶-²_Gý~¡/D½.ü7OB«ä5Ô)ªU«¶Eæ|]u´hØ~Q«V­Pï&#39;Òø6Èþ4IÒsã=räÈ×¨ëÕ%KÒQõUÇã;þ¼FLï,iØøÒI*eEÿÐ$ú}Jæ¹vÁ¶V÷(aJ»zïÞ½7ÑÙ	$ÏÉ¨ß=¼C5kÖìU¬X±ù«V­z¡xñâ$bÏÁÑTÁGÃ&#39;LÖêÓí~ µÁÇ7³üh®úvG&lt; Ø&quot;ªä¶JS#¿SAHÚ;¤#é ûÄºuëêie½;v_¶lYCJ/É§P1P{ì± _åûÈF_AÝ&quot;nã=Ûqï¼7×Lí»&#39; lÿë¯¿Z&gt;Gµñ&gt;eË-ÏÖ­[÷;G³á#é°Á{fÍ5u`oÌÈd»»té¸~ýúZ¸ßå(ÑÀ,( ÿe8Þí7I¾?&quot;ùÈý&lt;þøã.ê8²fx®ÉâÅ_6Ûø@æ
+¶ÙyRvïÞ]§yóæÛ(é$×$éô ·A®keu.%¹M67mÚTäç}F?&lt;¥P¡BMqí`|||¤ö$dnüÆý÷ÿ­Õ/×ò*ßvm¼å=vK&quot;k&lt;óÌ3»H:Èöiå½ ýly]{Fd&#39;]äçþÒÎ;«CrOÂxàH¾ëæÍ7k¶lÙ2eíÚµëÏÃ¤÷FÚ-L&quot;ªTñ ³@)DþôÓOåkÔ¨Ò#ÐyFt¤7-?ªµÇ*TÜ¸qãë0GÕAü&gt;H¿¹&quot;Èç2zÆÂLZ°`AU&gt;ÐS@plüN3§¼×öM+ £7ÄñtE«T©h¤0´¤»ÐiO2eÄ;ôa|£»8&gt;I__¢DVÚ¤Ëwg ,Ñ­[·}°ñOÂ¸´y®ù¿DÐQ$õhä&quot;Ä&amp;|åD«LÒ¹ÙgÍÈnjßýè¼+é!Ð¾­Á:?6ÄôA$HßNÖÌ¤¸J.Mµnß´iÓØ¼XA·á¾Âÿ3ÞYp}|Wæ,7ÇIðÛ|~-/[¶l6GÙDl±øô,æÞåv&amp;MtÀiPâó%á¤M TælSßT ét\$&quot;ÖD­ÁÍä òÑÉÐA¾éïA³Í,I={ÖÌ¬×PNØ×ã4!Ë&lt;LÒ½{wIä!Cv@«1	iòÈâtúß®MU´ç&amp;S#ª8º§#âòÓÚWÄ|¦¦O!&quot;·@{
+*cx«X×hºÌs±a^C¨½$«T©R®k×®}§8AäÍ2¡ªÕãø ¿ $6×ïf6K¥	Ê`ÏrýaÂ·ã4¾B/¬+Üã¾Á¤ÈÔ¬,CéÛ²u~L?PÏD£°*·IäæÍ·Dª\¼üÐÎâs½óõÌ¯øÐ@Þ¡÷A&#39;Þä8û¯Ã±yEVêØê]^cùýû÷GL&gt;½v=ÇB¡¥ÂÃ^+¶%u ~ÁK/½ÔQùtdóao)
+2ûëéa
+ºkåBF03gÎ¬
+é|ÒwQÑ¾áÃïÖïÁgTt¿
+uè&#39;8(âtü¶¡O÷©ä#Ê&quot;bi3²hÑ¢§ù¬yùÎ?þ¸4ÂÙúõë&#39;ü $ñfégvNÈÇÃrè¸?©àï4}¸\è&amp;ç;6ÒPä&gt;iCãjn!Ö²xµÛâ&lt;¤ £-«aZßç[Q!E6/yéÒ¥­ïËÂN_d&amp;`ª²­ta  ü;õ^8}útéJ*yKêÝ»·6ÈÖÆòåË7çËømªmñjeÖ¬YqÐ a¶U.¨ /BÃÀ}!òV6Þ íp¢¬c«W¯Ö=|O¨£×uù={ö,PDû}aÎT¯0S_e.é.¶æ}äv|l4f±#°¦&lt;ï_ª})ÐÀÔÿ&gt;µÃ}&amp;ÏãxÎ-xe\;wîÓÚ,3&#39;$Uü~`õ,£0K£yäjÂÔöS¦LyR¿Ïÿ0¡y¤Ù£á3Üô;Ìj4¨ ¸ß¸Ê+G³u}yCÂÖ@ïç&#39;Om;¶Ð®Ô&lt;&#39;DxÑ¹¯¾úªæk¯½fÎ4æ²S U ÇH[ü¡ÝüùóÇâ×¿sïÂl¸«^ÑÌLã&gt;øà;D-c`ôË:uj`Q¯u}ãÐª&quot;ð*t¨ ½&quot;ÂäXß&quot;òß~û­¥©QêÑ£G§gkpuS£í×	 =[ø~®NÁÉ}§_ÿæojâù :ed$Oí4B~çVnª²ðiòîÍ@ØÜI»v_ml:ÍNU®\¹lîl))Áå,¡­³
+-ÁÚfºÝ!jMSY¡Ó¢EÎhK
+Wà¹`&gt;fEsÓ×å¢©:f2ag#RåCýU»nì¸ºqãÆV8ÞA¼\äpnx¨Û|vRÌco¤f[
+Ù:ª0¨ÛþÂªú&amp;Eò}°×]a.~Ðï!½fIÕÚ_ç£={^ÁàÏ¢Y©±mÛ¶rÂ0S¦ö`}àæ§á¶Ñ»!¾ K|.¦*¶)¼v( ©ª9K
+.ó@¤­OØðþX­Ê©[Å/_ KHH`
+ú4Û©w¿òÊ+-ÞíB?bò69z´á:pàÀN0mË:&amp;lðh×þ*â¢£CNòàûÞ~ýú1·6ù¦U.«F&#39;È5Ô÷ÆÀv3ÿÂ¼Q7n~9¹¤?0cÆjF·s`,bcc»°á~©¹ã¹ó åû` záR¯^½B0a^DRÍD-â9±	:ù&gt;|~âà&#39;|¢/ËC¾yËò&gt;_ËxfØrÓ®]»fÐÓæAâ/ÌBÒÎãXsÎ9Ô/Éß°a#»\$á®ª-R°
+ö}°¡|¢ù¡R¦	U:#tøâ+bµjÔÏh;ÿeºí,)`8P&gt;Éy×7ÁågÏ]Ì\7&amp;T±Ì&gt;²n&amp;óà&lt;_ÖÌ¿vèÖU¤0Zj·lgXÈÎ[.hDÎfK m{¨!þ,ÅLa¤:Áö^®S§ÎT8QÂ¿1D&gt;bÐ}úô¹*Lþv³ØåzLóÛë÷ÌMçHóþ©¸_Â\éb[âóxétÙ!ó-¨+÷Ã0ßçwSWÙùÈÉø|ÚÈ#³uædßáÃÿpotòÄ¹ûà=ý~£Fº!Ù¬}5&gt;+Ï4Ù5²@8ØõG a%ÿÿÃy}ëy¿È%òxKóq
+d¤@B-éy@:óónNT½¥Èg#¦G­¯©&amp;{êîÕ«×1,1NA=º:tèQ½wß}76ÿIäx6[4Õ5nÜ¸¨ó8Ã_H}t³fÍÚ	kpÿåUÉ¥B«RD.ax®(ºN Â»¡ºÕ`*öjqùè¬»È°êAø½L¾&lt;Ç_@sâß*Ì`!öj°ÌEú&#39;V!òË~Ðeeh¾ÝB-r	[ÄsÝ4Ðuu/ÃóÝ»w×Çy27qÛµ©¨»ÈH&gt;LÊ¢&#39;OYdÊºÂ¹õ:q.r=ztØµk×òPåvìØ±á&#39;RÐô)ÍÛ·oo¹Vj0WcE.ax&amp;®AßAGUtLbv$a ¸ñH1MºH¾Âm×qqqSRR8-÷&#39;¾´}ò²Nú&amp;0£Â`Æ ½,DQ¢ÎhOqÎvÇáÙ³Xî&quot;ñzûµ-#¹-â©V`ã4GèÂ:cÌ1õ¡Ê	0+n.Èw3ZàÎ_,á}&lt;N¿äÖm¤½·sçÎÌ8^ÅàúU3i07ËøH±òGí^ ÖÉfr¤`x8×5GèßmÉ)$£ùËtòEöèVä«Õ«WarMÄÇÇ1	{f5ÏFH^í
+·üÞ½{çQ»ÂñwAÜij5X5náÄPä¶¶w ¥jy;tûÖõX;z»ü¹XøîAgÅvæRòå:-lmo¥kÐ³(&#39;ðË«0Á-ò¡pËì$nãÈF¥¶ÅÑl¦TÐÒnø¸&quot;°%ñ!FÜ¼iÕFçz&quot;&quot;¨G®©ÙíRüâ#ÆK[kK¶oßþ¶È¾÷å_®·&lt;÷â?~üe¼g=´qfµñÊaö0IsP¶ÿøñã7ÿvîÜp!Dûë¦L&lt;æ(A­ÿÌé=s÷Ü`ª?X¦Hûì³ÏôH#äî,Ã¦O×¼Þ«9­AºäåÏµ£!ÜÌûò×Ú1JÑôÀ¤ìÛ·¯.½wEh¨çÁàãZF÷äj;·]çj7ÒÉpq2ítò¹Å.[A¤j9À¤æÉ;vm¼exÇ ìd0iðÿD²uëÖß&#39;&amp;&amp;6ù\öÉçÇ8«DÎ¼¾xÈ`wCSÅu9Ãs³tº4ØÀS ÿÉZk¿M?.Æ`^ìS&lt;2
+S¬R.&lt;k_%ùXÑù) ?3¯þ_DntøðáBL2¥8ãäMáGû+ÜçØÀF2:ujê\j¸Mú&amp;ÌÌçeA°uëÖfüs&amp; 7.¦^üVÆîÏ1%¸µÂ´rôÐý Üü%%$¿0âíga^¸È±Sk®öÿ*ö¨a\{¤Î8pàÀ8pàÀ8pàÀ8pð¿ÿ |kz3¶D    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Lemah</span>, <span>Confidence</span>=<span
+							class="confidence-level">Sedang</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1004.html">CWE-1004</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>XSRF-TOKEN</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: XSRF-TOKEN</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A08_2025-Software_or_Data_Integrity_Failures/">OWASP_2025_A08</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/829.html">CWE-829</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/storage/kpay.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (1000 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/storage/kpay.png HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (231 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Last-Modified: Mon, 08 Jun 2026 07:12:21 GMT
+ETag: &quot;1280-653b8bb45b1ed&quot;
+Accept-Ranges: bytes
+Content-Length: 4736
+Content-Type: image/png
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4736 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR   ^   W   Ýò¦   	pHYs        sRGB ®Îé   gAMA  ±üa   tEXtSoftware Figma±c  ûIDATxí\	tE®9	B rÂ%°&quot;OnAYÎEWÐAYÈãÁÃ\TdeÅ&#39;ÇD@}(7r#°3²r$rá@2Ýû}îI§tvúãÝÓ]]]õÕÕ_5Â8pàÀ8pàÀÁÃ wk.÷u{?$1ýû÷/uðàÁ^çÎë·råÊ*{¹ IôàÁK6¬ñÚ£Iú:¨ªz&#39;==]½sçNUåÔ©SC´2v/Y²¤8ê»ÏÑ(íW&lt;êHJJªD¢/]º¤^¾|YIMMõAêI¾ØFØPTáÂ&#39;u_¼xUÜºukVæÑü3gÎ¼ûömã£jåÊ+*4`µÈ9ü6ýêÕ«îÞ½ËúÒùá  ©7o3ý­NX¯Wj¾Ñ¤¸Eá±Ì¨Q£rR/ËÊoÜ¸±¤H&quot;-@&gt;¿Sº½.ËzùrÌsÏ=²aÃZÙpüHn(ß5ËÝéz§²uÞíÎ¼|àÀpm&lt;Ë©&lt;¹uëÖç]1¨J\&quot;«n ùÐ¦V­ZýxâÄ+V¬¸Rd«ZÔ­¼õÖ[&#39;M4ZCÄöáX R@{^5|2¢¢¢îL6mè.|-â}Õ½ë×¯+µk×V.\(B@&#39;ÎylDDD_ÚtEFF/&amp;&amp;ÆhzTM»|O
+V¤¥¥õÇ M×êðmÛ¶-²_Gý~¡/D½.ü7OB«ä5Ô)ªU«¶Eæ|]u´hØ~Q«V­Pï&#39;Òø6Èþ4IÒsã=räÈ×¨ëÕ%KÒQõUÇã;þ¼FLï,iØøÒI*eEÿÐ$ú}Jæ¹vÁ¶V÷(aJ»zïÞ½7ÑÙ	$ÏÉ¨ß=¼C5kÖìU¬X±ù«V­z¡xñâ$bÏÁÑTÁGÃ&#39;LÖêÓí~ µÁÇ7³üh®úvG&lt; Ø&quot;ªä¶JS#¿SAHÚ;¤#é ûÄºuëêie½;v_¶lYCJ/É§P1P{ì± _åûÈF_AÝ&quot;nã=Ûqï¼7×Lí»&#39; lÿë¯¿Z&gt;Gµñ&gt;eË-ÏÖ­[÷;G³á#é°Á{fÍ5u`oÌÈd»»té¸~ýúZ¸ßå(ÑÀ,( ÿe8Þí7I¾?&quot;ùÈý&lt;þøã.ê8²fx®ÉâÅ_6Ûø@æ
+¶ÙyRvïÞ]§yóæÛ(é$×$éô ·A®keu.%¹M67mÚTäç}F?&lt;¥P¡BMqí`|||¤ö$dnüÆý÷ÿ­Õ/×ò*ßvm¼å=vK&quot;k&lt;óÌ3»H:Èöiå½ ýly]{Fd&#39;]äçþÒÎ;«CrOÂxàH¾ëæÍ7k¶lÙ2eíÚµëÏÃ¤÷FÚ-L&quot;ªTñ ³@)DþôÓOåkÔ¨Ò#ÐyFt¤7-?ªµÇ*TÜ¸qãë0GÕAü&gt;H¿¹&quot;Èç2zÆÂLZ°`AU&gt;ÐS@plüN3§¼×öM+ £7ÄñtE«T©h¤0´¤»ÐiO2eÄ;ôa|£»8&gt;I__¢DVÚ¤Ëwg ,Ñ­[·}°ñOÂ¸´y®ù¿DÐQ$õhä&quot;Ä&amp;|åD«LÒ¹ÙgÍÈnjßýè¼+é!Ð¾­Á:?6ÄôA$HßNÖÌ¤¸J.Mµnß´iÓØ¼XA·á¾Âÿ3ÞYp}|Wæ,7ÇIðÛ|~-/[¶l6GÙDl±øô,æÞåv&amp;MtÀiPâó%á¤M TælSßT ét\$&quot;ÖD­ÁÍä òÑÉÐA¾éïA³Í,I={ÖÌ¬×PNØ×ã4!Ë&lt;LÒ½{wIä!Cv@«1	iòÈâtúß®MU´ç&amp;S#ª8º§#âòÓÚWÄ|¦¦O!&quot;·@{
+*cx«X×hºÌs±a^C¨½$«T©R®k×®}§8AäÍ2¡ªÕãø ¿ $6×ïf6K¥	Ê`ÏrýaÂ·ã4¾B/¬+Üã¾Á¤ÈÔ¬,CéÛ²u~L?PÏD£°*·IäæÍ·Dª\¼üÐÎâs½óõÌ¯øÐ@Þ¡÷A&#39;Þä8û¯Ã±yEVêØê]^cùýû÷GL&gt;½v=ÇB¡¥ÂÃ^+¶%u ~ÁK/½ÔQùtdóao)
+2ûëéa
+ºkåBF03gÎ¬
+é|ÒwQÑ¾áÃïÖïÁgTt¿
+uè&#39;8(âtü¶¡O÷©ä#Ê&quot;bi3²hÑ¢§ù¬yùÎ?þ¸4ÂÙúõë&#39;ü $ñfégvNÈÇÃrè¸?©àï4}¸\è&amp;ç;6ÒPä&gt;iCãjn!Ö²xµÛâ&lt;¤ £-«aZßç[Q!E6/yéÒ¥­ïËÂN_d&amp;`ª²­ta  ü;õ^8}útéJ*yKêÝ»·6ÈÖÆòåË7çËømªmñjeÖ¬YqÐ a¶U.¨ /BÃÀ}!òV6Þ íp¢¬c«W¯Ö=|O¨£×uù={ö,PDû}aÎT¯0S_e.é.¶æ}äv|l4f±#°¦&lt;ï_ª})ÐÀÔÿ&gt;µÃ}&amp;ÏãxÎ-xe\;wîÓÚ,3&#39;$Uü~`õ,£0K£yäjÂÔöS¦LyR¿Ïÿ0¡y¤Ù£á3Üô;Ìj4¨ ¸ß¸Ê+G³u}yCÂÖ@ïç&#39;Om;¶Ð®Ô&lt;&#39;DxÑ¹¯¾úªæk¯½fÎ4æ²S U ÇH[ü¡ÝüùóÇâ×¿sïÂl¸«^ÑÌLã&gt;øà;D-c`ôË:uj`Q¯u}ãÐª&quot;ð*t¨ ½&quot;ÂäXß&quot;òß~û­¥©QêÑ£G§gkpuS£í×	 =[ø~®NÁÉ}§_ÿæojâù :ed$Oí4B~çVnª²ðiòîÍ@ØÜI»v_ml:ÍNU®\¹lîl))Áå,¡­³
+-ÁÚfºÝ!jMSY¡Ó¢EÎhK
+Wà¹`&gt;fEsÓ×å¢©:f2ag#RåCýU»nì¸ºqãÆV8ÞA¼\äpnx¨Û|vRÌco¤f[
+Ù:ª0¨ÛþÂªú&amp;Eò}°×]a.~Ðï!½fIÕÚ_ç£={^ÁàÏ¢Y©±mÛ¶rÂ0S¦ö`}àæ§á¶Ñ»!¾ K|.¦*¶)¼v( ©ª9K
+.ó@¤­OØðþX­Ê©[Å/_ KHH`
+ú4Û©w¿òÊ+-ÞíB?bò69z´á:pàÀN0mË:&amp;lðh×þ*â¢£CNòàûÞ~ýú1·6ù¦U.«F&#39;È5Ô÷ÆÀv3ÿÂ¼Q7n~9¹¤?0cÆjF·s`,bcc»°á~©¹ã¹ó åû` záR¯^½B0a^DRÍD-â9±	:ù&gt;|~âà&#39;|¢/ËC¾yËò&gt;_ËxfØrÓ®]»fÐÓæAâ/ÌBÒÎãXsÎ9Ô/Éß°a#»\$á®ª-R°
+ö}°¡|¢ù¡R¦	U:#tøâ+bµjÔÏh;ÿeºí,)`8P&gt;Éy×7ÁågÏ]Ì\7&amp;T±Ì&gt;²n&amp;óà&lt;_ÖÌ¿vèÖU¤0Zj·lgXÈÎ[.hDÎfK m{¨!þ,ÅLa¤:Áö^®S§ÎT8QÂ¿1D&gt;bÐ}úô¹*Lþv³ØåzLóÛë÷ÌMçHóþ©¸_Â\éb[âóxétÙ!ó-¨+÷Ã0ßçwSWÙùÈÉø|ÚÈ#³uædßáÃÿpotòÄ¹ûà=ý~£Fº!Ù¬}5&gt;+Ï4Ù5²@8ØõG a%ÿÿÃy}ëy¿È%òxKóq
+d¤@B-éy@:óónNT½¥Èg#¦G­¯©&amp;{êîÕ«×1,1NA=º:tèQ½wß}76ÿIäx6[4Õ5nÜ¸¨ó8Ã_H}t³fÍÚ	kpÿåUÉ¥B«RD.ax®(ºN Â»¡ºÕ`*öjqùè¬»È°êAø½L¾&lt;Ç_@sâß*Ì`!öj°ÌEú&#39;V!òË~Ðeeh¾ÝB-r	[ÄsÝ4Ðuu/ÃóÝ»w×Çy27qÛµ©¨»ÈH&gt;LÊ¢&#39;OYdÊºÂ¹õ:q.r=ztØµk×òPåvìØ±á&#39;RÐô)ÍÛ·oo¹Vj0WcE.ax&amp;®AßAGUtLbv$a ¸ñH1MºH¾Âm×qqqSRR8-÷&#39;¾´}ò²Nú&amp;0£Â`Æ ½,DQ¢ÎhOqÎvÇáÙ³Xî&quot;ñzûµ-#¹-â©V`ã4GèÂ:cÌ1õ¡Ê	0+n.Èw3ZàÎ_,á}&lt;N¿äÖm¤½·sçÎÌ8^ÅàúU3i07ËøH±òGí^ ÖÉfr¤`x8×5GèßmÉ)$£ùËtòEöèVä«Õ«WarMÄÇÇ1	{f5ÏFH^í
+·üÞ½{çQ»ÂñwAÜij5X5náÄPä¶¶w ¥jy;tûÖõX;z»ü¹XøîAgÅvæRòå:-lmo¥kÐ³(&#39;ðË«0Á-ò¡pËì$nãÈF¥¶ÅÑl¦TÐÒnø¸&quot;°%ñ!FÜ¼iÕFçz&quot;&quot;¨G®©ÙíRüâ#ÆK[kK¶oßþ¶È¾÷å_®·&lt;÷â?~üe¼g=´qfµñÊaö0IsP¶ÿøñã7ÿvîÜp!Dûë¦L&lt;æ(A­ÿÌé=s÷Ü`ª?X¦Hûì³ÏôH#äî,Ã¦O×¼Þ«9­AºäåÏµ£!ÜÌûò×Ú1JÑôÀ¤ìÛ·¯.½wEh¨çÁàãZF÷äj;·]çj7ÒÉpq2ítò¹Å.[A¤j9À¤æÉ;vm¼exÇ ìd0iðÿD²uëÖß&#39;&amp;&amp;6ù\öÉçÇ8«DÎ¼¾xÈ`wCSÅu9Ãs³tº4ØÀS ÿÉZk¿M?.Æ`^ìS&lt;2
+S¬R.&lt;k_%ùXÑù) ?3¯þ_DntøðáBL2¥8ãäMáGû+ÜçØÀF2:ujê\j¸Mú&amp;ÌÌçeA°uëÖfüs&amp; 7.¦^üVÆîÏ1%¸µÂ´rôÐý Üü%%$¿0âíga^¸È±Sk®öÿ*ö¨a\{¤Î8pàÀ8pàÀ8pàÀ8pð¿ÿ |kz3¶D    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informasi</span>, <span>Confidence</span>=<span
+							class="confidence-level">Sedang</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:laravel-session</p>
+
+<p>cookie:XSRF-TOKEN</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>laravel-session</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>laravel-session</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informasi</span>, <span>Confidence</span>=<span
+							class="confidence-level">Lemah</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://kospay.web.id</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://kospay.web.id/penghuni</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A07_2025-Authentication_Failures/">OWASP_2025_A07</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/">OWASP_2021_A07</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication.html">OWASP_2017_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (992 bytes)</summary>
+				
+				<pre><code>GET https://kospay.web.id/penghuni HTTP/1.1
+host: kospay.web.id
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://kospay.web.id/
+Cookie: XSRF-TOKEN=eyJpdiI6InJ4SmJISENXOW1BQmQ1bVMvMmdwckE9PSIsInZhbHVlIjoiQWtEUHVpeW9HQTBpbk01T0M0SkRVdDVWSVErQ0NwY0ZwZWNvQUNSSG1wWkFjVzVCRmFXVEh0VEdrRHNXQlorSVh5QWtsK1RWclZRbEhML0hhcDlVTmRXLzZ6TGJTVk45NEp5WWtKSzdFbzJsYjk1R2Q5MTN4TEQ4WkxyVTVBUUUiLCJtYWMiOiI2ZDQ0YzYxZjEzYzkxNGMyOTRlNmZiYmE0ZGIyOTk0NGVjMjYyYzY1YTIwMTYwZjdkN2U1YTQyYjA1YmQwZDE1IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6Ikc1a2RWU3ZKUCt3a012TGR2UC9vS2c9PSIsInZhbHVlIjoiZ01YLzZRdnVsdTMrdDRTMU91YzhXWVY2VjdGWStOUGxRczBVUHh2ZjgrWFVCUS9VQVRBVUFMVmYrMzJ4Y0hwVkZBSmVLWVJjNWV5RExyTHgwQXZnRytGV1c5ckUwUWpHakpLUG1iS0JQVzVSNDBTWDRISm9RWUZTLyt1UTRZbXUiLCJtYWMiOiIyNDU4ZGQ2MzA1NmZiMzU5ZWJhN2U2MDExODljOGM0NTMyZDcwMGE3NWYzYzdmMGI5YTZjY2JlNzk0MzNkOTllIiwidGFnIjoiIn0%3D
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (1122 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 06:24:34 GMT
+Server: Apache/2.4.67 (Debian)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IklTdnpWWnVxMmdQdWtiZ0MxL2s0UXc9PSIsInZhbHVlIjoiaExmcWF2T05YSW4rTmcyaVJkVTVvUVRQdzEvUUp0STFGVVJNYjlHU1hqYjcxQVVvdFE2QXFJdENEa1hyRE5JQ0h3UnVISXc2dG9rSDZhbEtwNHNqUnFmdExhMUdKV043OHc1ZHJTc0dMMXNIRDBFd2NWZ3lqSjZteUhVNGFTNEgiLCJtYWMiOiI4ZWJhMDYyYTZlOTllZDU1ZDMzOWQxODg0NTMyZjIyMWY1ZWQwZWE5ZjU1NjViNjNkMzkzMTcwMTUwMjhhMWJiIiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; samesite=lax
+Set-Cookie: laravel-session=eyJpdiI6IlBmZEo5akFJWDRGY1ZTMGhKQlJTUkE9PSIsInZhbHVlIjoiRTI4K1ZQWGJQKytzeUdqTWV0WVRIck5vR1dRNkNEczU2Z3EwNEo0L28rbDdYMGV3UVhLcFRMTmlvYmxNbWlzMkNnZUF0VS9hQnVCWTZCWDNjWkJ4M2xEOUdmTVJOaUR4T3YzdDlIM1VJZWN5c3FlTExIaUVKa3pPd0NLRDhCME0iLCJtYWMiOiJmMjViNmQyODNhOGViZjM0YzEwYmVmZjBhZTk4NGEzY2NlNjY3ODRjYTU1NDNlZDU1ZjA2NTAyZGNmYzkwMTY5IiwidGFnIjoiIn0%3D; expires=Wed, 10 Jun 2026 08:24:34 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+content-length: 7731
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (7731 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Sistem Keuangan Kos&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+
+/* ===== NAVBAR ===== */
+.nav-font{
+    font-family: &#39;Playfair Display&#39;, sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.navbar-custom{
+    background-color: #9E182B;
+}
+
+/* Biar benar-benar mentok kiri kanan */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* LOGO */
+.navbar-brand {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENU */
+.navbar-nav .nav-item {
+    margin: 0 50px; /* jarak antar menu */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff!important;
+    position: relative;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* UNDERLINE ANIMATION */
+.navbar-custom .nav-link::after {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+/* BUTTON KANAN */
+.navbar .btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-download {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E182B;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.floating-download:hover {
+    background-color: #ffffff;
+    color: #9E182B;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.contact-box {
+    background-color: #9E182B;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-text {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.feature-img {
+    max-width: 150px;
+    width: 100%;
+}
+.feature-img-2{
+    max-width: 50px;
+    width: 10%;
+}
+
+/* biar ada jarak */
+.feature-row {
+    margin-bottom: 50Spx;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg nav-font navbar-custom sticky-top&quot;&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;!-- LOGO --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/kpay.png&quot; alt=&quot;Logo&quot; class=&quot;logo-img&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;!-- TOGGLE --&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarNav&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- MENU --&gt;
+        &lt;div class=&quot;collapse navbar-collapse justify-content-between&quot; id=&quot;navbarNav&quot;&gt;
+
+            &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link &quot; href=&quot;/pemilik&quot;&gt;Pemilik Kos&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link active&quot; href=&quot;/penghuni&quot;&gt;Penghuni Kos&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;https://kospay.web.id/apk/kostpay.apk&quot; class=&quot;btn btn-light&quot; download&gt;Download APK&lt;/a&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;container-fluid px-5 mt-4&quot;&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row align-items-center&quot;&gt;
+        &lt;div class=&quot;col-md-4 text-center mb-4&quot;&gt;
+            &lt;img src=&quot;https://kospay.web.id/storage/penghuni.jpg&quot; 
+                 class=&quot;img-fluid &quot; 
+                 alt=&quot;Foto Pemilik&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;p&gt;Penghuni merupakan aktor yang berperan sebagai pengguna (user) dalam Sistem Kost Pay. Penghuni menggunakan sistem sebagai pihak yang melakukan pembayaran kost. Dalam sistem, penghuni berinteraksi sesuai dengan hak akses yang dimilikinya dan bertanggung jawab atas aktivitas pembayaran yang dilakukan, sehingga proses pembayaran kost dapat berjalan dengan tertib dan terdata dengan baik.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;h4 class=&quot;&quot;&gt;Fitur-Fitur Pemilik Kos&lt;/h4&gt;
+    &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- KOLOM KIRI --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melihat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melihat Tagihan&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-kamar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Pilih Kamar&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/pilih-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Memilih Metode Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/riwayat.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Riwayat&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- KOLOM KANAN --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/melakukan-bayar.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Melakukan Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/unggah.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Unggah Bukti Pembayaran&lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;feature-item d-flex align-items-center mb-4&quot;&gt;
+                &lt;img src=&quot;https://kospay.web.id/storage/notifikasi.jpg&quot; class=&quot;feature-img-2 me-3&quot;&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;Notifikasi&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;footer class=&quot;mt-5 py-3 contact-box&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center align-items-center gap-5 flex-wrap text-light&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-facebook fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;KostPay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-envelope-fill fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;@kostpay.ac.id&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-instagram fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;inthekostpay&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex align-items-center gap-2&quot;&gt;
+            &lt;i class=&quot;bi bi-whatsapp fs-5&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;0812-3456-7892&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>no-cache, private</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Sub Resource Integrity Attribute Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90003/">Sub Resource Integrity Attribute Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
